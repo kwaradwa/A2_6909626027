@@ -1,0 +1,31 @@
+html {
+  background-color: lightblue;
+}
+
+body {
+  max-width: 760px;
+  margin: 40px auto;
+  padding: 32px;
+  font-family: Arial, sans-serif;
+  background-color: lightyellow;
+  color: black;
+  line-height: 1.6;
+}
+
+h1, h2 {
+  color: darkblue;
+  text-align: center;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+}
+
+a {
+  color: blue;
+}
+
+footer {
+  text-align: center;
+}
