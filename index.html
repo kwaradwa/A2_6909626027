@@ -1,45 +1,120 @@
 <!DOCTYPE html>
 <html lang="th">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My First Learning Portfolio</title>
-    <link rel="stylesheet" href="css/style.css">
-  </head>
-  <body>
-    <header>
-      <h1>My First Learning Portfolio</h1>
-    </header>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Learning Portfolio ของ กฤษฏิ์ สายสุด รหัสนักศึกษา 6909626027">
+  <title>Krit Saisud | Learning Portfolio</title>
 
-    <main>
-      <section>
-        <h2>About Me</h2>
-        <img src="media/6909626027.jpg" alt="รูปโปรไฟล์ของกฤษฏิ์ สายสุด" width="100">
-        <ul>
-          <li>ชื่อ-นามสกุล: กฤษฏิ์ สายสุด</li>
-          <li>รหัสนักศึกษา: 6909626027</li>
-        </ul>
-        <p>เรียนที่มหาวิทยาลัยธรรมศาสตร์ คณะวิทยาศาสตร์ สาขาวิทยาการคอมพิวเตอร์</p>
-      </section>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header id="home" class="site-header">
+    <nav class="container py-3" aria-label="Main navigation">
+      <div class="d-flex flex-column flex-md-row align-items-md-center justify-content-between gap-3">
+        <a class="brand text-decoration-none" href="#home">Krit Portfolio</a>
+        <div class="d-flex flex-wrap gap-3 nav-links">
+          <a href="#about">About Me</a>
+          <a href="#portfolio">Portfolio</a>
+          <a href="#skills">Skills</a>
+          <a href="#reflection">Reflection</a>
+        </div>
+      </div>
+    </nav>
 
-      <section>
-        <h2>What I Built</h2>
-        <p>งาน A1 นี้เป็นเว็บไซต์ Portfolio / About Me สำหรับแนะนำตัวนักศึกษา โดยมีส่วนประกอบสำคัญ ได้แก่ ชื่อและรหัสนักศึกษา รูปโปรไฟล์ ข้อมูลผลงาน วิธีการพัฒนาเว็บไซต์ และส่วน Reflection เว็บไซต์สร้างด้วย HTML สำหรับโครงสร้างเนื้อหา และ CSS สำหรับตกแต่งหน้าตาเว็บไซต์</p>
-      </section>
+    <div class="container hero-section py-5">
+      <div class="row align-items-center g-4">
+        <div class="col-12 col-lg-5 text-center">
+          <img class="profile-photo img-fluid" src="media/profile.svg" alt="กราฟิกโปรไฟล์ของกฤษฏิ์ สายสุด">
+        </div>
+        <div class="col-12 col-lg-7">
+          <p class="eyebrow mb-2">CS100 • Semester 1/2569</p>
+          <h1 class="display-5 fw-bold mb-3">กฤษฏิ์ สายสุด</h1>
+          <p class="lead mb-2">รหัสนักศึกษา 6909626027</p>
+          <p class="hero-text mb-4">นักศึกษาสาขาวิทยาการคอมพิวเตอร์ คณะวิทยาศาสตร์และเทคโนโลยี มหาวิทยาลัยธรรมศาสตร์ สนใจการพัฒนาเว็บไซต์ การแก้ปัญหาด้วยตรรกะ และหมากรุกสากล</p>
+          <div class="d-flex flex-wrap gap-2">
+            <a class="btn btn-primary" href="#portfolio">ดูผลงาน</a>
+            <a class="btn btn-outline-primary" href="#reflection">สิ่งที่ได้เรียนรู้</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
 
-      <section>
-        <h2>How I Built It</h2>
-        <p>งานนี้พัฒนาโดยใช้ HTML และ CSS โดยใช้ VS Code เป็นเครื่องมือสำหรับเขียนและทดสอบเว็บไซต์</p>
-      </section>
+  <main>
+    <section id="about" class="section-block py-5">
+      <div class="container">
+        <div class="section-heading mb-4">
+          <p class="eyebrow mb-1">About Me</p>
+          <h2 class="h1">รู้จักผมให้มากขึ้น</h2>
+        </div>
+        <div class="row g-4">
+          <div class="col-12 col-lg-7">
+            <div class="content-card h-100">
+              <h3 class="h4">My Story</h3>
+              <p>ผมกำลังเรียนวิทยาการคอมพิวเตอร์ และเริ่มพัฒนาทักษะด้าน Web Development จากรายวิชา CS100 งาน A1 ทำให้ผมเริ่มเข้าใจโครงสร้างของ HTML และการตกแต่งด้วย CSS ส่วนงาน A2 เป็นโอกาสให้ผมพัฒนาต่อโดยใช้ Bootstrap และแนวคิด Responsive Web Design เพื่อให้เว็บไซต์ใช้งานได้ดีทั้งบนคอมพิวเตอร์และโทรศัพท์มือถือ</p>
+              <p class="mb-0">นอกจากการเขียนโปรแกรม ผมสนใจหมากรุกสากล เพราะช่วยฝึกการวางแผน สมาธิ การคิดเป็นขั้นตอน และการตัดสินใจภายใต้เวลาที่จำกัด ซึ่งเป็นทักษะที่สามารถนำมาปรับใช้กับการเรียนด้านคอมพิวเตอร์ได้</p>
+            </div>
+          </div>
+          <div class="col-12 col-lg-5">
+            <div class="content-card h-100">
+              <h3 class="h4">Quick Info</h3>
+              <dl class="info-list mb-0">
+                <div>
+                  <dt>Program</dt>
+                  <dd>Computer Science</dd>
+                </div>
+                <div>
+                  <dt>University</dt>
+                  <dd>Thammasat University</dd>
+                </div>
+                <div>
+                  <dt>Interests</dt>
+                  <dd>Web Development, Chess, Problem Solving</dd>
+                </div>
+                <div>
+                  <dt>Current Focus</dt>
+                  <dd>HTML, CSS, Bootstrap, Git/GitHub</dd>
+                </div>
+              </dl>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-      <section>
-        <h2>Reflection</h2>
-        <p>ปัญหาที่พบคือจำไม่ค่อยได้ว่าต้องใช้คำสั่งไหนตอนไหน แก้โดยการทบทวนเนื้อหาที่เรียนไปในคลาส และฝึกทำเองในแบบฝึกหัดทบทวน</p>
-      </section>
-    </main>
+    <section id="portfolio" class="section-block section-muted py-5">
+      <div class="container">
+        <div class="section-heading mb-4">
+          <p class="eyebrow mb-1">My Portfolio</p>
+          <h2 class="h1">ผลงานและประสบการณ์</h2>
+          <p class="section-intro">กำลังพัฒนา Portfolio Items ให้ครบตามข้อกำหนดของ A2</p>
+        </div>
+      </div>
+    </section>
 
-    <footer>
+    <section id="skills" class="section-block py-5">
+      <div class="container">
+        <div class="section-heading mb-4">
+          <p class="eyebrow mb-1">Skills</p>
+          <h2 class="h1">ทักษะที่กำลังพัฒนา</h2>
+        </div>
+      </div>
+    </section>
+
+    <section id="reflection" class="section-block reflection-section py-5">
+      <div class="container">
+        <p class="mb-0">Overall Reflection จะพัฒนาเพิ่มเติมในขั้นตอนถัดไป</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer py-4">
+    <div class="container d-flex flex-column flex-md-row justify-content-between gap-2">
       <small>&copy; 2026 กฤษฏิ์ สายสุด</small>
-    </footer>
-  </body>
+      <small>CS100 Individual Responsive Learning Portfolio</small>
+    </div>
+  </footer>
+</body>
 </html>
